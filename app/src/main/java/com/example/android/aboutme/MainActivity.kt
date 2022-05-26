@@ -1,7 +1,11 @@
 package com.example.android.aboutme
 
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity(contentLayoutId: Int) : AppCompatActivity(contentLayoutId) {
-    // TODO (02) Connect the layout to the activity using setContentView()
+class MainActivity: AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
 }
