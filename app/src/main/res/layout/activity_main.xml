@@ -20,8 +20,16 @@
         android:contentDescription="@string/yello_star"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
-    <!-- TODO (01) Add a ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <!-- TODO (02) Create a TextView with your bio inside the ScrollView -->
+        <TextView
+            android:id="@+id/bio_text"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bio"/>
+    </ScrollView>
 
 </LinearLayout>
